@@ -1,88 +1,397 @@
-<!DOCTYPE html>
-<html lang="pt-br">
+﻿<!DOCTYPE html>
+<html lang="pt-BR">
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
-  <meta name="description" content="Portfólio de Gilmar Júnior, desenvolvedor full stack em formação, com projetos em Python, JavaScript, HTML, CSS e PostgreSQL.">
+  <meta name="description" content="Portfólio de Gilmar Júnior, desenvolvedor full stack em formação, com projetos em Python, JavaScript, HTML, CSS, PostgreSQL e AWS.">
+  <meta name="theme-color" content="#f6efe6">
 
-  <title>Gilmar Júnior | Dev</title>
+  <title>Gilmar Júnior | Portfólio Full Stack</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700;800&family=Space+Grotesk:wght@500;700&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="style.css">
+  <script src="script.js" defer></script>
 </head>
-<body>
+<body id="top">
+  <div class="progress-bar" aria-hidden="true">
+    <span class="progress-bar__fill"></span>
+  </div>
 
-  <header>
-    <h1>Gilmar Júnior</h1>
-    <p>Desenvolvedor Full Stack em formação</p>
+  <div class="page-glow page-glow--one" aria-hidden="true"></div>
+  <div class="page-glow page-glow--two" aria-hidden="true"></div>
+
+  <header class="hero">
+    <div class="container">
+      <nav class="topbar reveal" aria-label="Navegação principal">
+        <a class="brand" href="#top">GJ</a>
+        <div class="topbar__links">
+          <a href="#sobre">Sobre</a>
+          <a href="#processo">Processo</a>
+          <a href="#habilidades">Habilidades</a>
+          <a href="#projetos">Projetos</a>
+          <a href="#contato">Contato</a>
+        </div>
+      </nav>
+
+      <div class="hero__content reveal">
+        <div class="hero__text">
+          <span class="eyebrow">Desenvolvedor Full Stack em formação</span>
+          <h1>Projetos web com mais personalidade, lógica e presença visual.</h1>
+          <p class="hero__copy">
+            Sou Gilmar Júnior e estou construindo minha trajetória criando aplicações completas, com foco em resolver problemas reais por meio de interfaces bem pensadas, código escalável e boa experiência para quem usa.
+          </p>
+          <p class="hero__availability">
+            <span class="status-dot" aria-hidden="true"></span>
+            Disponível para oportunidades onde eu possa aprender rápido, colaborar bem e evoluir entregando valor real.
+          </p>
+
+          <div class="hero__actions">
+            <a class="button button--primary" href="#projetos">Ver projetos</a>
+            <a class="button button--secondary" href="#contato">Falar comigo</a>
+          </div>
+
+          <ul class="hero__stats" aria-label="Resumo profissional">
+            <li>
+              <strong data-counter="6">6</strong>
+              <span>projetos em destaque</span>
+            </li>
+            <li>
+              <strong data-counter="7">7</strong>
+              <span>tecnologias-chave</span>
+            </li>
+            <li>
+              <strong data-counter="2">2</strong>
+              <span>frentes conectadas: front e back</span>
+            </li>
+          </ul>
+        </div>
+
+        <aside class="hero__panel" aria-label="Destaques do perfil">
+          <div class="hero-card hero-card--floating hero-card--top">
+            Construção de experiências web com foco em evolução constante.
+          </div>
+
+          <div class="hero-card hero-card--main" data-tilt>
+            <span class="hero-card__label">Stack principal</span>
+            <h2>Do layout à lógica de negócio.</h2>
+            <p>
+              Tenho interesse especial em criar aplicações completas, conectando interface, regras de negócio, banco de dados e integração entre serviços de forma coerente.
+            </p>
+
+            <ul class="stack-list" aria-label="Tecnologias principais">
+              <li>Python</li>
+              <li>JavaScript</li>
+              <li>HTML</li>
+              <li>CSS</li>
+              <li>PostgreSQL</li>
+              <li>AWS</li>
+            </ul>
+
+            <div class="hero-card__meta">
+              <div>Interesse em times colaborativos e projetos que gerem valor real.</div>
+              <div>Aprendizado contínuo com foco em consistência técnica e evolução prática.</div>
+            </div>
+          </div>
+
+          <div class="hero-card hero-card--floating hero-card--bottom">
+            API REST, banco de dados e automações como parte do meu repertório atual.
+          </div>
+        </aside>
+      </div>
+
+      <div class="signal-strip reveal" aria-label="Especialidades em destaque">
+        <div class="signal-strip__track">
+          <span>Interfaces responsivas</span>
+          <span>APIs REST</span>
+          <span>Automações</span>
+          <span>Banco de dados</span>
+          <span>Experiência visual</span>
+          <span>Organização de projeto</span>
+          <span>Interfaces responsivas</span>
+          <span>APIs REST</span>
+          <span>Automações</span>
+          <span>Banco de dados</span>
+          <span>Experiência visual</span>
+          <span>Organização de projeto</span>
+        </div>
+      </div>
+    </div>
   </header>
 
+  <main>
+    <section class="section reveal" id="sobre">
+      <div class="container">
+        <div class="section__heading">
+          <div>
+            <span>Sobre mim</span>
+            <h2>Construindo soluções completas, com clareza e intenção.</h2>
+          </div>
+          <p>
+            Busco oportunidades como desenvolvedor full stack para evoluir tecnicamente, aprender com o time e contribuir com entregas úteis para o negócio.
+          </p>
+        </div>
 
-  <section class="sobre">
-    <h2>Sobre mim</h2>
-    <p>
-      Sou desenvolvedor em formação com foco na construção de aplicações web completas, atuando tanto no front-end quanto no back-end, com interesse em resolver problemas reais por meio de código bem estruturado e escalável.
-Estou em constante aprendizado e busco oportunidades como desenvolvedor full-stack, onde possa evoluir tecnicamente, aprender com o time e contribuir com soluções de valor de forma consistente tanto para a empresa quanto para os demais colaboradores.
-    </p>
-   </section>
+        <div class="about__grid">
+          <article class="surface-panel content-card">
+            <p>
+              Sou desenvolvedor em formação com foco na construção de aplicações web completas, atuando tanto no front-end quanto no back-end. Gosto de transformar necessidades reais em soluções organizadas, escaláveis e com uma boa experiência visual.
+            </p>
+            <p>
+              Minha meta é crescer em ambientes onde eu possa aprender rápido, colaborar com consistência e evoluir como profissional enquanto entrego valor de forma prática.
+            </p>
+          </article>
 
-   <section class="habilidades">
-    <h2>Habilidades</h2>
-    <ul>
-      <li>Python</li>
-      <li>JavaScript</li>
-      <li>HTML & CSS</li>
-      <li>PostgreSQL</li>
-      <li>API REST</li>
-    </ul>
+          <div class="about__highlights">
+            <article class="highlight-card">
+              <strong>Visão completa</strong>
+              <p>Penso no produto de ponta a ponta, conectando interface, dados e lógica.</p>
+            </article>
+            <article class="highlight-card">
+              <strong>Base técnica sólida</strong>
+              <p>Tenho afinidade com Python, JavaScript e organização de aplicações web.</p>
+            </article>
+            <article class="highlight-card">
+              <strong>Evolução constante</strong>
+              <p>Estudo com foco em repertório prático, melhoria contínua e consistência.</p>
+            </article>
+          </div>
+        </div>
+      </div>
+    </section>
 
-  </section>
+    <section class="section reveal" id="processo">
+      <div class="container">
+        <div class="section__heading">
+          <div>
+            <span>Processo</span>
+            <h2>Como eu penso um projeto do início até a entrega.</h2>
+          </div>
+          <p>
+            Mesmo em evolução, procuro seguir um fluxo claro para construir melhor: entender o problema, organizar a solução e refinar a experiência final.
+          </p>
+        </div>
 
-  <section class="projetos">
-    <h2>Projetos</h2>
+        <div class="workflow">
+          <article class="workflow-card" data-tilt>
+            <span class="workflow-card__step">01</span>
+            <h3>Entender o contexto</h3>
+            <p>Começo olhando para a necessidade real do projeto, os objetivos do usuário e o que faz sentido tecnicamente para a solução.</p>
+          </article>
 
-    <div class="card">
-      <h3>Sistema de Gestão - Casa de Show</h3>
-      <p>Sistema completo com login, controle financeiro e estoque.</p>
-      <span>Python • PostgreSQL • API REST</span>
-    </div>
+          <article class="workflow-card" data-tilt>
+            <span class="workflow-card__step">02</span>
+            <h3>Construir com estrutura</h3>
+            <p>Organizo interface, regras de negócio e dados de forma coerente para que a aplicação seja clara, funcional e mais fácil de evoluir.</p>
+          </article>
 
-    <div class="card">
-      <h3>Sistema de Login</h3>
-      <p>Autenticação de usuários com validação de dados.</p>
-      <span>Python • HTML • CSS</span>
-    </div>
+          <article class="workflow-card" data-tilt>
+            <span class="workflow-card__step">03</span>
+            <h3>Refinar a experiência</h3>
+            <p>Gosto de lapidar detalhes visuais, responsividade e legibilidade para que a entrega pareça mais sólida e profissional.</p>
+          </article>
+        </div>
+      </div>
+    </section>
 
-    <div class="card">
-      <h3>Dashboard Financeiro</h3>
-      <p>Visualização de dados com interface moderna.</p>
-      <span>JavaScript • CSS</span>
-    </div>
+    <section class="section reveal" id="habilidades">
+      <div class="container">
+        <div class="section__heading">
+          <div>
+            <span>Habilidades</span>
+            <h2>Tecnologias que sustentam meu processo de desenvolvimento.</h2>
+          </div>
+          <p>
+            Organizei minhas habilidades por área para mostrar melhor como penso na construção de soluções completas.
+          </p>
+        </div>
 
-    <div class="card">
-      <h3>Automação de Tarefas</h3>
-      <p>Automação de processos repetitivos com interface amigável.</p>
-      <span>Python • Tkinter</span>
-    </div>
+        <div class="skills__grid">
+          <article class="skill-card" data-tilt>
+            <h3>Front-end</h3>
+            <p>Interfaces responsivas, estrutura semântica e atenção à apresentação visual.</p>
+            <ul class="pill-list" aria-label="Habilidades de front-end">
+              <li>HTML</li>
+              <li>CSS</li>
+              <li>JavaScript</li>
+            </ul>
+          </article>
 
-    <div class="card">
-      <h3>Criação de chatGPT</h3>
-      <p>interface de chat com integração ao modelo GPT.</p>
-      <span>Python</span>
-    </div>
+          <article class="skill-card" data-tilt>
+            <h3>Back-end</h3>
+            <p>Regras de negócio, automações e integração com APIs para dar vida aos projetos.</p>
+            <ul class="pill-list" aria-label="Habilidades de back-end">
+              <li>Python</li>
+              <li>API REST</li>
+              <li>PostgreSQL</li>
+            </ul>
+          </article>
 
-    <div class="card">
-      <h3>Bot discord</h3>
-      <p>Bot para o Discord com comandos diversos, calculos matemáticos, registro de pessoas ao servidor.</p>
-      <span>Python</span>
-    </div>
+          <article class="skill-card" data-tilt>
+            <h3>Fluxo de trabalho</h3>
+            <p>Versionamento, organização de projeto e interesse em infraestrutura moderna.</p>
+            <ul class="pill-list" aria-label="Habilidades de fluxo de trabalho">
+              <li>Git &amp; GitHub</li>
+              <li>AWS</li>
+              <li>Aprendizado contínuo</li>
+            </ul>
+          </article>
+        </div>
+      </div>
+    </section>
 
-  </section>
-  <section id="contato">
-    <h2>Contato</h2>
-    <p>Email: gilmar.santos1186@gmail.com</p>
-    <p>LinkedIn: www.linkedin.com/in/gjdev</p>
-    <p>GitHub: github.com/MilliCoDev</p>
-  </section>
+    <section class="section reveal" id="projetos">
+      <div class="container">
+        <div class="section__heading">
+          <div>
+            <span>Projetos</span>
+            <h2>Projetos que mostram minha evolução técnica na prática.</h2>
+          </div>
+          <p>
+            Cada card abaixo representa um recorte do que venho estudando e construindo para ampliar meu repertório como dev.
+          </p>
+        </div>
 
+        <div class="section__utility">
+          <a class="button button--ghost" href="https://github.com/MilliCoDev" target="_blank" rel="noopener noreferrer">Explorar repositórios</a>
+        </div>
+
+        <div class="projects__grid">
+          <article class="project-card" data-tilt>
+            <span class="project-card__number">01</span>
+            <h3>Sistema de Gestão para Casa de Show</h3>
+            <p>Sistema completo com login, controle financeiro e gerenciamento de estoque em uma mesma solução.</p>
+            <ul class="project-tags" aria-label="Tecnologias do projeto Sistema de Gestão para Casa de Show">
+              <li>Python</li>
+              <li>PostgreSQL</li>
+              <li>API REST</li>
+            </ul>
+            <div class="project-card__footer">
+              <span>Gestão</span>
+              <span>Back-end + dados</span>
+            </div>
+            <span class="project-card__accent" aria-hidden="true"></span>
+          </article>
+
+          <article class="project-card" data-tilt>
+            <span class="project-card__number">02</span>
+            <h3>Sistema de Login</h3>
+            <p>Autenticação de usuários com validação de dados e uma base mais estruturada para controle de acesso.</p>
+            <ul class="project-tags" aria-label="Tecnologias do projeto Sistema de Login">
+              <li>Python</li>
+              <li>HTML</li>
+              <li>CSS</li>
+            </ul>
+            <div class="project-card__footer">
+              <span>Autenticação</span>
+              <span>Base estrutural</span>
+            </div>
+            <span class="project-card__accent" aria-hidden="true"></span>
+          </article>
+
+          <article class="project-card" data-tilt>
+            <span class="project-card__number">03</span>
+            <h3>Dashboard Financeiro</h3>
+            <p>Visualização de dados com foco em leitura rápida, organização visual e interface mais moderna.</p>
+            <ul class="project-tags" aria-label="Tecnologias do projeto Dashboard Financeiro">
+              <li>JavaScript</li>
+              <li>CSS</li>
+            </ul>
+            <div class="project-card__footer">
+              <span>Dados visuais</span>
+              <span>Interface moderna</span>
+            </div>
+            <span class="project-card__accent" aria-hidden="true"></span>
+          </article>
+
+          <article class="project-card" data-tilt>
+            <span class="project-card__number">04</span>
+            <h3>Automação de Tarefas</h3>
+            <p>Automação de processos repetitivos com foco em produtividade e experiência mais amigável para o uso diário.</p>
+            <ul class="project-tags" aria-label="Tecnologias do projeto Automação de Tarefas">
+              <li>Python</li>
+              <li>Tkinter</li>
+            </ul>
+            <div class="project-card__footer">
+              <span>Produtividade</span>
+              <span>Automação prática</span>
+            </div>
+            <span class="project-card__accent" aria-hidden="true"></span>
+          </article>
+
+          <article class="project-card" data-tilt>
+            <span class="project-card__number">05</span>
+            <h3>Chatbot inspirado em ChatGPT</h3>
+            <p>Interface de chat integrada a um modelo GPT, com foco na experiência de conversa e na usabilidade.</p>
+            <ul class="project-tags" aria-label="Tecnologias do projeto Chatbot inspirado em ChatGPT">
+              <li>Python</li>
+              <li>Interface de chat</li>
+            </ul>
+            <div class="project-card__footer">
+              <span>IA</span>
+              <span>Experiência conversacional</span>
+            </div>
+            <span class="project-card__accent" aria-hidden="true"></span>
+          </article>
+
+          <article class="project-card" data-tilt>
+            <span class="project-card__number">06</span>
+            <h3>Bot para Discord</h3>
+            <p>Bot com comandos diversos, cálculos matemáticos e recursos de registro de membros no servidor.</p>
+            <ul class="project-tags" aria-label="Tecnologias do projeto Bot para Discord">
+              <li>Python</li>
+              <li>Discord</li>
+              <li>Automação</li>
+            </ul>
+            <div class="project-card__footer">
+              <span>Comunidade</span>
+              <span>Comandos e registro</span>
+            </div>
+            <span class="project-card__accent" aria-hidden="true"></span>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="section contact reveal" id="contato">
+      <div class="container">
+        <div class="contact__panel">
+          <div>
+            <span>Contato</span>
+            <h2>Se fizer sentido para o seu time, vamos conversar.</h2>
+            <p>
+              Estou aberto a oportunidades para aprender, colaborar e contribuir com projetos que valorizem boa execução, evolução técnica e vontade de construir.
+            </p>
+
+            <ul class="contact__meta" aria-label="Canais de contato">
+              <li>
+                <small>Email</small>
+                <a href="mailto:gilmar.santos1186@gmail.com">gilmar.santos1186@gmail.com</a>
+              </li>
+              <li>
+                <small>LinkedIn</small>
+                <a href="https://www.linkedin.com/in/gjdev" target="_blank" rel="noopener noreferrer">linkedin.com/in/gjdev</a>
+              </li>
+              <li>
+                <small>GitHub</small>
+                <a href="https://github.com/MilliCoDev" target="_blank" rel="noopener noreferrer">github.com/MilliCoDev</a>
+              </li>
+            </ul>
+          </div>
+
+          <div class="contact__actions">
+            <a class="button button--light" href="mailto:gilmar.santos1186@gmail.com">Enviar e-mail</a>
+            <a class="button button--outline" href="https://www.linkedin.com/in/gjdev" target="_blank" rel="noopener noreferrer">LinkedIn</a>
+            <a class="button button--outline" href="https://github.com/MilliCoDev" target="_blank" rel="noopener noreferrer">GitHub</a>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <p>&copy; <span id="year"></span> Gilmar Júnior. Portfólio desenvolvido com HTML, CSS e JavaScript.</p>
+  </footer>
 </body>
 </html>
