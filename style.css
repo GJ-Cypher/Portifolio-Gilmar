@@ -742,6 +742,24 @@ a {
   transform: rotate(12deg);
 }
 
+.project-card__link {
+  display: inline-flex;
+  align-items: center;
+  margin-top: 16px;
+  font-size: 0.88rem;
+  font-weight: 700;
+  color: var(--accent-2);
+  text-decoration: none;
+  letter-spacing: 0.3px;
+  transition: color 0.2s, gap 0.2s;
+  gap: 4px;
+}
+
+.project-card__link:hover {
+  color: var(--accent);
+  gap: 8px;
+}
+
 .contact {
   padding-bottom: 84px;
 }
